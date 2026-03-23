@@ -1,0 +1,165 @@
+{
+  "site_name": "filmfog.com",
+  "theme": {
+    "colors": {
+      "background": {
+        "primary": "#ffffff",
+        "secondary": "#eeeeee",
+        "dark": "#000000",
+        "overlay": "rgba(37, 38, 42, 0.94)"
+      },
+      "text": {
+        "primary": "#222222",
+        "secondary": "#999999",
+        "light": "#ffffff",
+        "accent": "#cc0000"
+      },
+      "border": {
+        "light": "rgba(0, 0, 0, 0.08)",
+        "white": "rgba(255, 255, 255, 0.6)"
+      }
+    },
+    "typography": {
+      "font_families": {
+        "primary": "gmsj, sans-serif",
+        "secondary": "'Helvetica Neue', sans-serif"
+      },
+      "headings": {
+        "h1_masthead": {
+          "font_size": "80px",
+          "font_weight": "bold",
+          "line_height": "80px",
+          "text_transform": "none",
+          "color": "#ffffff"
+        },
+        "page_title": {
+          "font_size": "30px",
+          "font_weight": "700",
+          "line_height": "32px",
+          "text_transform": "uppercase",
+          "color": "#222222"
+        },
+        "module_title": {
+          "font_size": "30px",
+          "font_weight": "700",
+          "line_height": "32px",
+          "text_transform": "uppercase",
+          "color": "#222222"
+        },
+        "module_subtitle": {
+          "font_size": "20px",
+          "font_weight": "700",
+          "line_height": "22px",
+          "text_transform": "uppercase",
+          "color": "#222222"
+        }
+      },
+      "body": {
+        "main_text": {
+          "font_size": "16px",
+          "font_weight": "400",
+          "line_height": "24px",
+          "color": "#999999"
+        },
+        "caption": {
+          "font_size": "14px",
+          "font_weight": "400",
+          "line_height": "18px",
+          "color": "#999999"
+        }
+      }
+    }
+  },
+  "layout": {
+    "structure": {
+      "type": "sidebar_left",
+      "max_width": "1400px",
+      "sidebar": {
+        "width": "25%",
+        "position": "fixed_or_float_left",
+        "padding_top": "60px",
+        "padding_bottom": "20px"
+      },
+      "main_content": {
+        "width": "75%",
+        "float": "left",
+        "margin_left": "5%",
+        "margin_right": "5%",
+        "content_width": "90%"
+      }
+    },
+    "responsive": {
+      "breakpoints": {
+        "tablet": "932px",
+        "mobile": "540px"
+      },
+      "mobile_behavior": {
+        "sidebar": "hidden, replaced by hamburger menu",
+        "main_content": "width 100%, margin 0, padding 0 5%",
+        "navigation": "bottom fixed or full screen overlay"
+      }
+    }
+  },
+  "components": {
+    "logo": {
+      "font_family": "gmsj",
+      "font_size": "15px",
+      "line_height": "28px",
+      "color": "#222222",
+      "text_align": "left"
+    },
+    "navigation": {
+      "padding_top": "40px",
+      "items": {
+        "gallery_title": {
+          "font_size": "11px",
+          "font_weight": "700",
+          "text_transform": "uppercase",
+          "color": "#222222",
+          "hover_color": "#999999"
+        },
+        "project_title": {
+          "font_size": "14px",
+          "font_weight": "400",
+          "text_transform": "none",
+          "color": "#999999",
+          "hover_color": "#222222",
+          "active_color": "#222222"
+        }
+      }
+    },
+    "gallery_grid": {
+      "display": "flex",
+      "flex_wrap": "wrap",
+      "gap": "normal",
+      "item_width": "50% (approx, based on 2-column layout)",
+      "image_fit": "cover",
+      "hover_effect": {
+        "transition": "background-color 0.2s ease, opacity 0.2s ease",
+        "overlay": "opacity change on hover"
+      }
+    },
+    "buttons": {
+      "masthead_button": {
+        "border": "1px solid rgba(255, 255, 255, 0.6)",
+        "border_radius": "5px",
+        "color": "#ffffff",
+        "font_size": "12px",
+        "font_weight": "bold",
+        "height": "40px",
+        "padding": "0 30px",
+        "text_transform": "uppercase",
+        "hover": {
+          "border": "1px solid rgba(255, 255, 255, 0.3)"
+        }
+      }
+    }
+  },
+  "animations": {
+    "transitions": {
+      "link_hover": "background 0.2s ease, color 0.2s ease",
+      "fade_in": "0.25s ease-in forwards",
+      "fade_out": "0.25s ease-out forwards"
+    }
+  }
+}
