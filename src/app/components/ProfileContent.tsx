@@ -1,3 +1,6 @@
+import React from 'react';
+const profileImage = new URL('../../profile.png', import.meta.url).href;
+
 const profileData = {
   name: 'Yeonwoo Seo',
   contact: '+82-10-7399-0709',
@@ -12,7 +15,7 @@ export function ProfileContent() {
       <h2 className="page-title">Profile</h2>
 
       <div className="profile-card">
-        <img src="/src/profile.png" alt="Profile photo" className="profile-photo-placeholder" aria-label="Profile photo placeholder" />
+        <img src={profileImage} alt="Profile photo" className="profile-photo-placeholder" aria-label="Profile photo placeholder" />
 
         <div className="profile-details">
           <h2 className="profile-name">{profileData.name}</h2>

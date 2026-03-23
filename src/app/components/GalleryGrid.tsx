@@ -1,6 +1,8 @@
-import { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { Play, Share2 } from 'lucide-react';
+const beginnerImage = new URL('../../beginner.png', import.meta.url).href;
+const intermediateImage = new URL('../../intermediate.png', import.meta.url).href;
 
 interface GalleryItem {
   id: number;
@@ -111,9 +113,9 @@ export function GalleryGrid({ items, title }: GalleryGridProps) {
                 : undefined;
           const experienceImageOverride =
             title === 'Experience' && index === 4
-              ? '/src/초급.png'
+              ? beginnerImage
               : title === 'Experience' && index === 7
-                ? '/src/중급.png'
+                ? intermediateImage
                 : item.imageUrl;
 
           if (isExperienceTextBlock) {

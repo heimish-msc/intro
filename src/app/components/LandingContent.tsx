@@ -1,24 +1,27 @@
+import React from 'react';
 import { Camera, Music, UserRound } from 'lucide-react';
 
 interface LandingContentProps {
   onNavigate: (target: string) => void;
 }
 
-const HERO_VIDEO_SRC = '/src/hero.mp4';
+const HERO_VIDEO_SRC = import.meta.env.VITE_HERO_VIDEO_URL as string | undefined;
 
 export function LandingContent({ onNavigate }: LandingContentProps) {
   return (
     <section className="landing-content">
       <div className="landing-hero">
-        <video
-          className="landing-hero-video"
-          src={HERO_VIDEO_SRC}
-          autoPlay
-          muted
-          loop
-          playsInline
-          aria-label="Landing hero background video"
-        />
+        {HERO_VIDEO_SRC ? (
+          <video
+            className="landing-hero-video"
+            src={HERO_VIDEO_SRC}
+            autoPlay
+            muted
+            loop
+            playsInline
+            aria-label="Landing hero background video"
+          />
+        ) : null}
       </div>
 
       <div className="landing-feature-grid">

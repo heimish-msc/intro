@@ -6,7 +6,7 @@ interface MobileMenuProps {
   activeGallery: string;
 }
 
-const SIGNATURE_SRC = '/src/signature.png';
+const SIGNATURE_SRC = new URL('../../signature.png', import.meta.url).href;
 const CONTACT_LINKS = {
   email: 'mailto:comp.yeonwoo@gmail.com',
   instagram: 'https://www.instagram.com/heimish_msc/'
